@@ -1,0 +1,470 @@
+
+/* 
+Theme Name: CMAK2
+Theme URI: http://www.chrismakarsky.com/
+Version: 0.420
+Description: A personal theme for chrismakarsky.com
+Author: Chris Makarsky
+Author URI: http://www.chrismakarsky.com/
+*/
+
+* { padding: 0; margin: 0; }
+html, body { height: 100%; }
+html {-webkit-text-size-adjust:none}
+body {
+	font: 62.5%/1.0 Helvetica, Arial, sans-serif;
+	color: #383838;
+	background-color: #fefefe;
+	background-image: url('http://img.chrismakarsky.com/tile.jpg');
+background-attachment: fixed;
+}
+a { color: #111; text-decoration: none; outline: 0; }
+a:hover { text-decoration: underline; }
+
+h1 {
+	font-size: 8.4em;
+	padding: 6px 24px;
+	color: #282828;
+	letter-spacing: -.03em;	
+}
+h2 {
+	font-size: 1.6em;
+	line-height: 1.6;
+	min-height: 48px;
+	letter-spacing: -.02em;
+	padding: 3px 0 12px 24px;
+	width: 216px;
+	float: left;
+	text-align: right;
+}
+h2 a { color: #363636; }
+h3 {
+	font-size: 2.6em;
+	line-height: 1.2;
+	padding: 3px 0 2px 0;
+	letter-spacing: -.05em;
+	color: #111;
+	text-shadow: #bbb .05em .05em .05em;
+}
+h3 a { color: #111; }
+h4 {
+	font-size: 1.6em;
+	line-height: 1.2;
+	color: #333;
+	letter-spacing: -.02em;
+}
+h4 a {
+	color: #333;
+	text-decoration: underline;
+}
+
+#page {
+	border-top: 6px solid #191919;
+	background-repeat: no-repeat;
+	background-image: url('http://img.chrismakarsky.com/corner-new.png');
+	background-position: right top;
+}
+
+#top {  }
+#header {
+	background-image: url('http://img.chrismakarsky.com/full-grad.png');
+	background-repeat: no-repeat;
+	padding-top: 24px;
+}
+#header p {
+	font-weight: bold;
+	padding: 0 12px 0 24px;
+}
+#header #intro {
+	letter-spacing: -.04em;
+	font-size: 3em;
+}
+#header #about {
+	width: 732px;
+	margin: 0 0 24px 0;
+	font-size: 1.5em;
+	line-height: 27px;
+	color: #888;
+	font-weight: normal;
+}
+#header #about a {
+	color: #666;
+	font-weight: bold;
+	text-shadow: #ddd .08em .08em .05em;
+}
+#header #about a:hover {
+	color: #222;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+#header #about a.internal-link { 
+	font-size: 1.2em;
+	color: #444;
+	border-bottom: 1px dotted
+}
+#header #about a.internal-link:hover {
+	border-bottom: 1px solid;
+	color: #000;
+}
+
+#header .mail-link {
+	padding: 2px 0 0 20px;
+	background-position: left 0px;
+	background-image: url('http://img.chrismakarsky.com/mail.gif');
+	background-repeat: no-repeat;
+	margin-left: 6px;
+}
+#header #about a#contact-link {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#header #about-extended,
+#header #mail-message { border-top: 1px solid #ddd; }
+#header #mail-message p { padding: 0; }
+#header #about-extended {
+	display: none; 
+	width: auto;
+	margin-right: 120px;
+}
+
+#header #about-photo {
+	float: left; 
+	margin-left: 48px;
+}
+#header #about-photo img {
+	width: 190px;
+	line-height: 0;
+	border: 1px solid #555;
+}
+
+#header p.caption {
+	font-size: 1.3em;
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-weight: normal;
+	padding: 6px 3px;
+	color: #888;
+}
+
+#contact { }
+#contact p {
+	font-size: 1.5em;
+	line-height: 2;
+	padding: 0;
+}
+#contact-close { 
+	float: right;
+	text-align: right;
+	cursor: pointer;
+}
+#contact-close-link {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+#contact input,
+#contact textarea,
+#contact submit {
+	padding: 6px;
+	font-size: 1.0em;
+	font-family: Helvetica, sans-serif;
+	margin-bottom: 6px;
+	color: #aaa;
+}
+#contact input { width: 388px; }
+#contact input:hover,
+#contact input:focus,
+#contact textarea:hover,
+#contact textarea:focus,
+#contact submit:hover,
+#contact submit:focus {
+	background-color: #fff;
+	color: #222;
+}
+#contact #contactverify { width: auto; margin: 0; padding: 0; }
+#contact #contactcheck {
+	color: #888;
+	font-weight: normal;
+}
+#contact #contactcheck label { cursor: pointer; }
+#contact #contactcheck:hover { color: #222; }
+#contact textarea {
+	width: 489px;
+	height: 164px;
+	margin: 0;
+}
+
+#contact #contactsubmit {
+	background-color: #fff;
+	color: #222;
+	border-width: 3px;
+	border-style: double;
+	cursor: pointer;
+	width: auto;
+}
+
+#middle { }
+#content {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	width: auto;
+	margin-right: 120px;
+}
+
+#feeds { margin: 0 0 2px 0; }
+#twitter { }
+#delicious { }
+#lastfm { }
+#digg { }
+#reddit { }
+#flickr { }
+#flickr img {
+	margin: 6px 0;
+	line-height: 0;
+	border: 1px solid #555;
+}
+
+#feeds .full { padding-bottom: 18px; }
+#feeds .snip { padding-right: 120px; }
+#twitter.snip { padding-right: 240px; }
+#twitter .snip-more { margin-right: -60px; }
+
+#footer { margin-right: 120px; }
+#footer p {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: right;
+	color: #bbb;
+	margin-right: 12px;
+}
+#footer .snip { padding-right: 120px; }
+#footer a { font-size: 2em; }
+#footer a:hover { }
+#footer .full { padding: 12px 0; }
+
+#networks {
+	z-index: 200;
+}
+#networks ul { 
+	font-size: 1.4em;
+	line-height: 1.72;
+	color: #666;
+}
+#networks li {
+	float: left;
+	list-style-type: none;
+	width: 180px;
+}
+#networks li a { 
+	display: block;
+	color: #555;
+	padding: 1px 12px 0 30px;
+	margin: 2px 6px;
+	border: 1px solid #fff;
+}
+#networks li a:hover { 
+	color: #111;
+	border: 1px solid #ddd;
+	background-color: #f5f5f5;
+}
+
+
+.fluid { width: 100%; clear: both; }
+.fixed { with: auto; }
+.hidden { display: none; }
+.temp { display: hidden; }
+.clear { clear: both; }
+
+.full { 
+	clear: both;
+	padding: 24px 0;
+	margin-right: -120px;
+}
+.full:hover {
+	background-image: url('http://img.chrismakarsky.com/trans094w.png');
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+.thick-bar-left,
+.thick-bar-right {
+	clear: both;
+	margin: 1px 0;
+	height: 9px;
+	background-color: #ccc;
+}
+.thick-bar-right { margin-left: 264px; }
+.thick-bar-left { margin-right: 264px; }
+.offset-correct { margin-right: 144px; }
+
+.entry {
+	font-family: Georgia, Times, serif;
+	font-size: 1.4em;
+	line-height: 1.7;
+	padding: 0 2.4em 0 .1em;
+	color: #333;
+}
+.entry a { color: #333; }
+.data-postmeta, .data-memeta {
+	color: #999;
+	font-style: italic;
+	font-family: "Georgia", serif;	
+}
+.data-postmeta {
+	background: url('http://img.chrismakarsky.com/time.png') no-repeat left center;
+	font-size: 1.3em;
+	line-height: 1.6;
+	padding-left: 1.6em;
+	margin-top: .1em;
+}
+.data-memeta { font-size: .8em; padding-right: .1em; }
+a .data-memeta { font-weight: normal; }
+
+.snip {
+	min-width: 506px;
+	width: auto;
+	margin-left: 264px;
+	clear: right;
+	padding-right: 180px;
+}
+.snip-more {
+	display: none;
+	width: auto;
+}
+.snip-more-toggle {
+	float: right;
+	margin-right: -60px;
+	margin-top: 2px;
+	text-align: right;
+	cursor: pointer;
+}
+.snip-more-toggle a {
+	display: block;
+	height: 32px;
+	width: 32px;
+}
+.snip-more-toggle a:hover { border-bottom: 0; }
+
+.snip-more ul { list-style-type: none; }
+.snip-more li { padding: 18px 0 0 0; }
+
+
+.post { }
+.post .entry p { margin: 1.2em 0; }
+.post .entry h3 { 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	color: #222;
+}
+.post .snip {
+	margin-left: 24px;
+	margin-right: 240px;
+}
+
+
+
+#comments .snip {
+	margin-left: 24px;
+	margin-right: 240px;
+}
+
+.spinner { 
+	background: url('http://img.chrismakarsky.com/ajax-loader.gif') no-repeat left center;
+	display: inline;
+	min-width: 120px;
+	height: 48px;
+}
+
+.threed-border {
+	border-top: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+}
+.threed-border:hover,
+.threed-border:focus {
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+	border-bottom: 1px solid #333;
+	border-right: 1px solid #333;
+}
+
+.success { font-size: 2.4em; color: green; }
+.failure { font-size: 2.4em; color: red; }
+
+.cancel { background-image: url('/images/cancel.png'); }
+.more { background-image: url('/images/plus.png'); }
+.less { background-image: url('/images/minus.png'); }
+
+a .c1, a .c3 { color: #409dd5; text-shadow: #888 .02em .02em .05em; }
+a .c2, a .c4 { color: #30439b; text-shadow: #222 .02em .02em .05em; }
+a:hover .c1, a:hover .c3 { color: #888; }
+a:hover .c2, a:hover .c4 { color: #191919; }
+
+a.link {
+	background-repeat: no-repeat;
+	background-image: url('http://img.chrismakarsky.com/icons.png');
+}
+a.link2 {
+	background-repeat: no-repeat;
+	background-image: url('http://img.chrismakarsky.com/icons2.png');
+	padding: 12px 45px 8px 0px;
+	line-height: 2;
+}
+
+.link-amazon { background-position: 6px -120px; }
+.link-brightkite { background-position: 6px -936px; }
+.link-delicious { background-position: 6px -264px; }
+.link-digg { background-position: 6px -216px; }
+.link-diigo { background-position: 6px -912px; }
+.link-disqus { background-position: 6px -1008px; }
+.link-facebook { background-position: 6px 0; }
+.link-flickr { background-position: 6px -72px; }
+.link-friendfeed { background-position: 6px -624px; }
+.link-goodreads { background-position: 6px -576px; }
+.link-greader { background-position: 6px -888px; }
+.link-gtalk { background-position: 6px -1032px; }
+.link-ilike { background-position: 6px -408px; }
+.link-iminta { background-position: 6px -456px; }
+.link-intensedebate { background-position: 6px -864px; }
+.link-iusethis { background-position: 6px -672px; }
+.link-jyte { background-position: 6px -336px; }
+.link-lastfm { background-position: 6px -240px; }
+.link-linkedin { background-position: 6px -192px; }
+.link-magnolia { background-position: 6px -288px; }
+.link-mixx { background-position: 6px -360px; }
+.link-muxtape { background-position: 6px -744px; }
+.link-mybloglog { background-position: 6px -816px; }
+.link-netflix { background-position: 6px -696px; }
+.link-netvibes { background-position: 6px -960px; }
+.link-newsvine { background-position: 6px -552px; }
+.link-openid { background-position: 6px -840px; }
+.link-pandora { background-position: 6px -1056px; }
+.link-pownce { background-position: 6px -384px; }
+.link-reddit { background-position: 6px -168px; }
+.link-resume { background-position: 6px -720px; }
+.link-rss { background-position: 6px -600px; }
+.link-skitch { background-position: 6px -648px; }
+.link-slideshare { background-position: 6px -984px; }
+.link-stumbleupon { background-position: 6px -312px; }
+.link-twitter { background-position: 6px -144px; }
+.link-twitxr { background-position: 6px -792px; }
+.link-tumblr { background-position: 6px -528px; }
+.link-upcoming { background-position: 6px -96px; }
+.link-virb { background-position: 6px -504px; }
+.link-wakoopa { background-position: 6px -768px; }
+.link-yahoo { background-position: 6px -48px; }
+.link-yelp { background-position: 6px -24px; }
+.link-youtube { background-position: 6px -432px; }
+
+.link2-blog {  background-position: right -6px; }
+.link2-twitter { background-position: right -53px; }
+.link2-delicious { background-position: right -102px; }
+.link2-digg { background-position: right -197px; }
+.link2-flickr { background-position: right -294px; }
+.link2-lastfm { background-position: right -148px; }
+.link2-reddit { background-position: right -244px; }
