@@ -14,9 +14,9 @@ html {-webkit-text-size-adjust:none}
 body {
 	font: 62.5%/1.0 Helvetica, Arial, sans-serif;
 	color: #383838;
-	background-color: #fefefe;
+	background-color: #eee;
 	background-image: url('http://img.chrismakarsky.com/tile.jpg');
-background-attachment: fixed;
+	/*background-attachment: fixed;*/
 }
 a { color: #111; text-decoration: none; outline: 0; }
 a:hover { text-decoration: underline; }
@@ -131,7 +131,7 @@ h4 a {
 
 #header #about-photo {
 	float: left; 
-	margin-left: 48px;
+	margin-left: 36px;
 }
 #header #about-photo img {
 	width: 190px;
@@ -168,7 +168,7 @@ h4 a {
 #contact input,
 #contact textarea,
 #contact submit {
-	padding: 6px;
+	padding: 7px 6px;
 	font-size: 1.0em;
 	font-family: Helvetica, sans-serif;
 	margin-bottom: 6px;
@@ -214,7 +214,9 @@ h4 a {
 	margin-right: 120px;
 }
 
-#feeds { margin: 0 0 2px 0; }
+#feeds {
+	margin-bottom: 2px;
+}
 #twitter { }
 #delicious { }
 #lastfm { }
@@ -229,8 +231,21 @@ h4 a {
 
 #feeds .full { padding-bottom: 18px; }
 #feeds .snip { padding-right: 120px; }
-#twitter.snip { padding-right: 240px; }
-#twitter .snip-more { margin-right: -60px; }
+#twitter.snip { padding-right: 238px; }
+#twitter .snip-more { 
+	margin-top: 24px;
+	margin-right: 24px;
+}
+#twitter .snip-more h4 {
+	padding-left: 60px;
+	min-height: 60px;
+	background-image: url('http://s3.amazonaws.com/twitter_production/profile_images/57279874/guitar_hero-copy-sq_normal.png');
+	background-repeat: no-repeat;
+	background-position
+}
+#twitter .snip-more li {
+	border-top: 1px solid #ddd;
+}
 
 #footer { margin-right: 120px; }
 #footer p {
@@ -256,19 +271,21 @@ h4 a {
 #networks li {
 	float: left;
 	list-style-type: none;
-	width: 180px;
+	width: 162px;
+	margin-right: 18px;
+	overflow: hidden;
 }
 #networks li a { 
 	display: block;
 	color: #555;
 	padding: 1px 12px 0 30px;
 	margin: 2px 6px;
-	border: 1px solid #fff;
 }
 #networks li a:hover { 
 	color: #111;
 	border: 1px solid #ddd;
 	background-color: #f5f5f5;
+	margin: 1px 5px;
 }
 
 
@@ -295,11 +312,11 @@ h4 a {
 	clear: both;
 	margin: 1px 0;
 	height: 9px;
-	background-color: #ccc;
+	background-color: #ddd;
 }
 .thick-bar-right { margin-left: 264px; }
 .thick-bar-left { margin-right: 264px; }
-.offset-correct { margin-right: 144px; }
+.offset-left { margin-right: 264px; }
 
 .entry {
 	font-family: Georgia, Times, serif;
@@ -350,26 +367,119 @@ a .data-memeta { font-weight: normal; }
 .snip-more-toggle a:hover { border-bottom: 0; }
 
 .snip-more ul { list-style-type: none; }
-.snip-more li { padding: 18px 0 0 0; }
+.snip-more li { padding-top: 12px; }
 
 
-.post { }
-.post .entry p { margin: 1.2em 0; }
-.post .entry h3 { 
+
+#blog {
+	padding: 24px 144px 24px 48px;
+}
+#blog h3 { 
+	font-size: 3.0em;
+}
+
+#blog .post {
+
+}
+#blog .post .entry p { margin: 1.2em 0; }
+#blog .post .entry h3 { 
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
 	color: #222;
 }
-.post .snip {
-	margin-left: 24px;
-	margin-right: 240px;
+#blog .post blockquote {
+	padding-left: 24px;
+	color: #666;
+}
+#blog .post li {
+	margin: 1.2em 0;
 }
 
+#blog #comments {
+	padding: 24px 0 0 0;
+}
+#blog #comments h3 {
+	font-size: 1.8em;
+}
+#blog #comments ol {
+	list-style-type: none;
+	padding: 0 24px 24px 24px;
+}
+#blog #comments li {
+	color: #222;
+	clear: both;
+	margin: 1.2em 0;
+	font-size: 1.4em;
+	border-top: 1px solid #ddd;
+	padding-top: 6px;
+}
+#blog #comments li p {
+	font-family: Georgia, Times, serif;
+	line-height: 1.2em;
+	margin: 0 144px 18px 0;
+}
+#blog #comments li li {
 
+}
+#blog #comments li blockquote {
+	padding-left: 24px;
+	color: #666;
+}
+#blog #comments li p.commentmetadata {
+	margin: 0;
+}
+#blog #comments li p.commentmetadata a {
+	color: #777;
+	font-size: .9em;
+}
+#blog #comments cite {
+	float: right;
+	padding: 2px 6px 0 0;
+}
+#blog #comments .avatar {
+	float: right;
+	margin-bottom: 24px;
+}
 
-#comments .snip {
-	margin-left: 24px;
-	margin-right: 240px;
+#blog #commentform {
+	padding: 12px 0;
+}
+
+#blog #commentform p {
+	font-size: 1.5em;
+	line-height: 2;
+	margin: 0 1.2em;
+}
+
+#blog #comments input,
+#blog #comments textarea,
+#blog #comments submit {
+	padding: 7px 6px;
+	font-size: 1.0em;
+	font-family: Helvetica, sans-serif;
+	margin-bottom: 6px;
+	color: #aaa;
+}
+#blog #comments input { width: 388px; }
+#blog #comments input:hover,
+#blog #comments input:focus,
+#blog #comments textarea:hover,
+#blog #comments textarea:focus,
+#blog #comments submit:hover,
+#blog #comments submit:focus {
+	background-color: #fff;
+	color: #222;
+}
+#blog #comments textarea {
+	width: 576px;
+}
+#blog #comments #commentsubmit {
+	background-color: #fff;
+	color: #222;
+	border-width: 3px;
+	border-style: double;
+	cursor: pointer;
+	width: auto;
 }
 
 .spinner { 
