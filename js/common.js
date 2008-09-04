@@ -10,13 +10,6 @@ $(document).ready(function() {
 		else { openContact("don't need to contact me?"); }
 	});
 
-	/*$("#feeds")>$(".full")>$("#twitter").hover(function() {
-		$(this).children(".snip-more-toggle").fadeIn("fast");
-	}, function() {
-		$(this).children(".snip-more-toggle").hide();
-		//$(".snip-more").slideUp('').addClass('spinner');
-	});*/
-
 	$(".snip-more-link").click(function() {
 		if ($(this).parent().siblings('.snip-more').is(':hidden')) {
 			$(this).removeClass("more").addClass("cancel");			
@@ -27,7 +20,6 @@ $(document).ready(function() {
 			});
 		} else {
 			$(this).removeClass("cancel").addClass("more").parent().siblings('.snip-more').fadeOut('fast');
-			//removeSpinner(this);
 		}
 	});
 	
