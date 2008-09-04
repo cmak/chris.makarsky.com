@@ -231,17 +231,17 @@ h4 a {
 
 #feeds .full { padding-bottom: 18px; }
 #feeds .snip { padding-right: 120px; }
-#twitter.snip { padding-right: 238px; }
+#twitter.snip { padding-right: 180px; }
 #twitter .snip-more { 
 	margin-top: 24px;
-	margin-right: 24px;
 }
 #twitter .snip-more h4 {
 	padding-left: 60px;
-	min-height: 60px;
+	min-height: 54px;
 	background-image: url('http://s3.amazonaws.com/twitter_production/profile_images/57279874/guitar_hero-copy-sq_normal.png');
 	background-repeat: no-repeat;
-	background-position
+	padding-top: 6px;
+
 }
 #twitter .snip-more li {
 	border-top: 1px solid #ddd;
