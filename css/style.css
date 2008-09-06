@@ -108,13 +108,16 @@ h4 a {
 	color: #000;
 }
 
-#header .mail-link {
+#header .image-link {
 	padding: 9px 0 9px 36px;
-	background-position: left center;
-	background-image: url('http://img.chrismakarsky.com/email.png');
+	background-position: left center;	
 	background-repeat: no-repeat;
 	margin-left: 3px;
 }
+#header .mail-link { background-image: url('http://img.chrismakarsky.com/email.png'); }
+#header .blog-link { background-image: url('http://www.chrismakarsky.com/images/blog.png'); }
+#header .network-link { background-image: url('http://www.chrismakarsky.com/images/network.png'); }
+
 #header #about a#contact-link {
 	font-weight: bold;
 	cursor: pointer;
@@ -171,7 +174,7 @@ h4 a {
 
 #contact input,
 #contact textarea,
-#contact submit {
+#contact #contactsubmit {
 	padding: 7px 6px;
 	font-size: 1.0em;
 	font-family: Helvetica, sans-serif;
@@ -183,8 +186,8 @@ h4 a {
 #contact input:focus,
 #contact textarea:hover,
 #contact textarea:focus,
-#contact submit:hover,
-#contact submit:focus {
+#contact #contactsubmit:hover,
+#contact #contactsubmit:focus {
 	background-color: #fff;
 	color: #222;
 }
@@ -198,16 +201,22 @@ h4 a {
 #contact textarea {
 	width: 489px;
 	height: 164px;
-	margin-bottom: -4px;
 }
 
 #contact #contactsubmit {
 	background-color: #fff;
-	color: #222;
-	border-width: 3px;
-	border-style: double;
+	border-width: 1px;
+	font-weight: bold;
 	cursor: pointer;
 	width: auto;
+	background-image: url('http://img.chrismakarsky.com/rightarrow_50.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 46px;
+	height: 41px;
+}
+#contact #contactsubmit:hover {
+	background-image: url('http://img.chrismakarsky.com/rightarrow.png');
 }
 
 #middle { }
@@ -237,6 +246,7 @@ h4 a {
 #feeds .snip { padding-right: 120px; }
 #twitter.snip { padding-right: 180px; }
 #twitter .snip-more { 
+	margin-right: -36px;
 	margin-top: 24px;
 }
 #twitter .snip-more h4 {
@@ -459,7 +469,7 @@ a .data-memeta { font-weight: normal; }
 
 #blog #comments input,
 #blog #comments textarea,
-#blog #comments submit {
+#blog #comments #commentsubmit {
 	padding: 7px 6px;
 	font-size: 1.0em;
 	font-family: Helvetica, sans-serif;
@@ -471,23 +481,30 @@ a .data-memeta { font-weight: normal; }
 #blog #comments input:focus,
 #blog #comments textarea:hover,
 #blog #comments textarea:focus,
-#blog #comments submit:hover,
-#blog #comments submit:focus {
+#blog #comments #commentsubmit:hover,
+#blog #comments #commentsubmit:focus {
 	background-color: #fff;
 	color: #222;
 }
 #blog #comments textarea {
 	width: 100%;
-
 }
 #blog #comments #commentsubmit {
 	background-color: #fff;
-	color: #222;
-	border-width: 3px;
-	border-style: double;
+	border-width: 1px;
+	font-weight: bold;
 	cursor: pointer;
 	width: auto;
+	background-image: url('http://img.chrismakarsky.com/rightarrow_50.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 46px;
+	height: 41px;
 }
+#blog #comments #commentsubmit:hover {
+	background-image: url('http://img.chrismakarsky.com/rightarrow.png');
+}
+
 
 .spinner { 
 	background: url('http://img.chrismakarsky.com/ajax-loader.gif') no-repeat left center;
